@@ -16,6 +16,12 @@ vram = 0x80000450
 size = 0x9EDA0
 
 functions = [
+    { name = "osWritebackDCacheAll", vram = 0x80076280, size = 0x4 },
+    { name = "osGetCount", vram = 0x8007F2C0, size = 0x10 },
+    { name = "bzero", vram = 0x8007B930, size = 0xA0 },
+    { name = "__osRestoreInt", vram = 0x8007F300, size = 0x20 },
+    { name = "osSetIntMask", vram = 0x800761E0, size = 0xA0 },
+    { name = "viMgrMain", vram = 0x8007E010, size = 0x198 },
     { name = "thread_function_1_00071048", vram = 0x80070448, size = 0x188 },
     { name = "thread_function_2_000712B8", vram = 0x800706B8, size = 0x264 },
     { name = "thread_function_4_000715B8", vram = 0x800709B8, size = 0x1E4 },
@@ -33,7 +39,7 @@ functions = [
     { name = "__osPackEepReadData_0007CC58", vram = 0x8007C058, size = 0x88 },
     { name = "__osPackEepWriteData_0007CE48", vram = 0x8007C248, size = 0xA8 },
     { name = "__osPackReadData_0007D1B4", vram = 0x8007C5B4, size = 0xB8 },
-    { name = "viMgrMain_0007EC10", vram = 0x8007E010, size = 0x198 },
+    { name = "viMgrMain", vram = 0x8007E010, size = 0x198 },
     { name = "createSpeedParam_0007FDF0", vram = 0x8007F1F0, size = 0xB8 },
     { name = "_Putfld_000817F0", vram = 0x80080BF0, size = 0x4BC },
     { name = "_Ldunscale_00084620", vram = 0x80083A20, size = 0x98 },
