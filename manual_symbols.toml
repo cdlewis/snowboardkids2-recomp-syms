@@ -1,0 +1,32 @@
+# Functions added or overridden after the ELF dump. Addresses assume the matching US ROM.
+[[section]]
+name = ".main"
+functions = [
+    { name = "osWritebackDCacheAll", vram = 0x80076280, size = 0x4 },
+    { name = "osGetCount", vram = 0x8007F2C0, size = 0x10 },
+    { name = "bzero", vram = 0x8007B930, size = 0xA0 },
+    { name = "__osRestoreInt", vram = 0x8007F300, size = 0x20 },
+    { name = "osSetIntMask", vram = 0x800761E0, size = 0xA0 },
+    { name = "viThreadEntry_00071048", vram = 0x80070448, size = 0x188 },
+    { name = "schedThreadEntry_000712B8", vram = 0x800706B8, size = 0x264 },
+    { name = "displayThreadEntry_000715B8", vram = 0x800709B8, size = 0x1E4 },
+    { name = "audioThreadEntry_0007151C", vram = 0x8007091C, size = 0x74 },
+    { name = "SetForCustom_00075BE4", vram = 0x80074FE4, size = 0x18 },
+    { name = "GetFxMostSections_00075BFC", vram = 0x80074FFC, size = 0x44 },
+    { name = "GetFxLongest_00075C40", vram = 0x80075040, size = 0x44 },
+    { name = "_decodeChunk_000786BC", vram = 0x80077ABC, size = 0x178 },
+    { name = "_pullSubFrame_00078F70", vram = 0x80078370, size = 0x300 },
+    { name = "_getVol_000795F4", vram = 0x800789F4, size = 0x84 },
+    { name = "_getRate_00079374", vram = 0x80078774, size = 0x280 },
+    { name = "__nextSampleTime_0007AF38", vram = 0x8007A338, size = 0xA8 },
+    { name = "_timeToSamplesNoRound_0007AEA4", vram = 0x8007A2A4, size = 0x48 },
+    { name = "proutSprintf_0007C6B8", vram = 0x8007BAB8, size = 0x34 },
+    { name = "__osPackEepReadData_0007CC58", vram = 0x8007C058, size = 0x88 },
+    { name = "__osPackEepWriteData_0007CE48", vram = 0x8007C248, size = 0xA8 },
+    { name = "__osPackReadData_0007D1B4", vram = 0x8007C5B4, size = 0xB8 },
+    { name = "viMgrMain", vram = 0x8007E010, size = 0x198 },
+    { name = "createSpeedParam_0007FDF0", vram = 0x8007F1F0, size = 0xB8 },
+    { name = "_Putfld_000817F0", vram = 0x80080BF0, size = 0x4BC },
+    { name = "_Ldunscale_00084620", vram = 0x80083A20, size = 0x98 },
+    { name = "_Genld_000846B8", vram = 0x80083AB8, size = 0x5A0 },
+]
